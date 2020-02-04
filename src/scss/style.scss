@@ -1,7 +1,58 @@
-h1{
-	color: yellow;
+body {
+	margin: 0;
 }
 
-.test{
-	font-size: 72px;
+$darkgrey: #272d33;
+$grey: #f1f1f1;
+$lightgrey: #fafafa;
+
+.mainwrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	height: 40px;
+	background-color: $darkgrey;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainarea {
+	background-color: $grey;
+}
+
+.navigation__main {
+	display: flex;
+}
+
+.navigation__secondary {
+	display: flex;
+}
+
+@media(min-width: 700px){
+	.mainwrap {
+		flex-direction: row;
+	}
+	.navigation {
+		width: 100px;
+		height: 100vh;
+		background-color: $darkgrey;
+		color: #fff;
+		flex-direction: column;
+	}
+
+	.mainarea {
+		background-color: $grey;
+		width: calc(100% - 100px);
+	}
+
+	.navigation__main {
+		flex-direction: column;
+	}
+
+	.navigation__secondary {
+		flex-direction: column;
+	}
 }
