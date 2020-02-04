@@ -39,17 +39,20 @@ body {
     position: relative;
     top: -2px;
     left: -6px; }
-  .navigation__item img {
-    filter: grayscale(100%) brightness(63%); }
-    .navigation__item img:hover {
-      filter: grayscale(0%) brightness(100%); }
+
+.navigation__item__img {
+  filter: grayscale(100%) brightness(63%); }
+
+.navigation__item:hover .navigation__item__img {
+  filter: grayscale(0%) brightness(100%); }
 
 .navigation__item__active img, .navigation__user img,
 .navigation__logout img {
   filter: grayscale(0%) brightness(100%); }
-  .navigation__item__active img:hover, .navigation__user img:hover,
-  .navigation__logout img:hover {
-    opacity: 0.8; }
+
+.navigation__item__active:hover img, .navigation__user:hover img,
+.navigation__logout:hover img {
+  opacity: 0.7; }
 
 .navigation__user {
   position: relative; }
@@ -86,10 +89,14 @@ body {
     top: -7px; }
   .navigation__projects .count {
     top: -19px;
-    right: -13px; }
+    right: -13px;
+    background-color: #adadad; }
   .navigation__projects .navigation__item__text {
     line-height: 4px;
     margin-bottom: 15px; }
+
+.navigation__projects:hover .navigation__projects__count {
+  background-color: #ff503f; }
 
 .navigation__settings img {
   width: 54px; }
