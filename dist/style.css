@@ -218,6 +218,12 @@ body {
   font-size: 14px;
   padding: 7px 15px; }
 
+.mainarea__search input {
+  border: 0;
+  background-color: #f1f1f1;
+  width: 90%;
+  text-align: right; }
+
 @media (min-width: 700px) {
   .mainwrap {
     flex-direction: row; }
