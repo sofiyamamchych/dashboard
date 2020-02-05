@@ -212,7 +212,10 @@ body {
 
 .mainarea__projects {
   background-color: #fff;
-  min-height: 250px; }
+  min-height: 250px;
+  border-top: 1px solid #c8c8c8;
+  position: relative;
+  top: -1px; }
 
 .mainarea__tabsline__tab {
   font-size: 14px;
@@ -223,6 +226,10 @@ body {
   background-color: #f1f1f1;
   width: 90%;
   text-align: right; }
+
+.mainarea__tabsline__projects__icon,
+.mainarea__tabsline__messenger__icon {
+  display: none; }
 
 @media (min-width: 700px) {
   .mainwrap {
@@ -306,11 +313,93 @@ body {
     margin-top: 0; }
   .navigation__item__text {
     font-size: 16px; }
+  .mainarea__headline {
+    padding: 33px 30px;
+    height: 98px; }
   .mainarea__headline__onlineusers__btn span {
     display: inline-block; }
   .mainarea__headline__onlineusers__btn img {
     width: 16px; }
   .mainarea__tabsline {
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
   .mainarea__search {
-    width: calc(100% - 250px); } }
+    width: calc(100% - 250px); }
+  .mainarea__headline__dashboard__refresh {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0 0px 12px;
+    position: relative;
+    top: -3px; }
+  .mainarea__headline__dashboard__btn,
+  .mainarea__headline__onlineusers__btn {
+    font-size: 14px;
+    border-radius: 29px;
+    padding: 12px 21px 9px 15px;
+    position: relative;
+    top: -5px;
+    margin-left: 6px; }
+  .mainarea__headline__onlineusers__show {
+    width: 40px;
+    height: 40px;
+    padding: 13px 0 0 13px;
+    position: relative;
+    left: 0;
+    top: -4px; }
+  .mainarea__headline__onlineusers {
+    display: flex; }
+  .mainarea__headline__onlineusers__btn {
+    width: 174px;
+    font-size: 12px;
+    padding: 14px 14px 26px 15px;
+    display: flex;
+    justify-content: space-between; }
+  .mainarea__headline__onlineusers__btn__bubbleicon img {
+    width: 24px;
+    top: -5px;
+    position: relative; }
+  .mainarea__tabsline__tab {
+    height: 77px; }
+  .mainarea__tabsline__projects {
+    padding: 20px 30px 16px 30px;
+    width: 297px; }
+    .mainarea__tabsline__projects span {
+      font-size: 21px;
+      position: relative;
+      top: -19px;
+      margin-left: 7px; }
+    .mainarea__tabsline__projects .count {
+      top: 14px;
+      right: 35px; }
+  .mainarea__tabsline__projects__icon {
+    display: inline-block;
+    width: 48px;
+    position: relative;
+    top: -2px;
+    left: -2px; }
+  .mainarea__tabsline__messenger {
+    width: 267px; }
+    .mainarea__tabsline__messenger span {
+      font-size: 21px; }
+    .mainarea__tabsline__messenger .count {
+      top: 14px;
+      right: 43px; }
+  .mainarea__tabsline__messenger__icon {
+    display: inline-block;
+    width: 43px;
+    position: relative;
+    top: 13px;
+    left: 17px;
+    margin-right: 28px; }
+  .mainarea__search {
+    /* width: calc(100% - 564px); */
+    /* min-width: 300px; */
+    padding: 4px 8.7% 0 21px; }
+    .mainarea__search input {
+      height: 100%;
+      font-size: 18px;
+      color: #c8c8c8; } }
+
+@media (min-width: 1024px) {
+  .mainarea__search {
+    width: calc(100% - 564px);
+    min-width: 300px; } }
