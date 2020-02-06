@@ -382,8 +382,8 @@ body {
 .mainarea__projects__item__searcharea {
   display: flex;
   justify-content: space-between;
-  height: 92px;
-  padding: 27px 3% 0 3%; }
+  padding: 27px 3% 17px 3%;
+  flex-direction: column; }
   .mainarea__projects__item__searcharea input {
     height: 40px;
     min-width: 340px;
@@ -418,7 +418,8 @@ body {
   background-color: #fff;
   min-height: 400px;
   display: none;
-  border-top: 1px solid #c8c8c8; }
+  border-top: 1px solid #c8c8c8;
+  padding: 30px 5%; }
 
 @media (min-width: 1024px) {
   .mainwrap {
@@ -656,3 +657,9 @@ body {
   .mainarea__search {
     width: calc(100% - 564px);
     min-width: 300px; } }
+
+@media (min-width: 1200px) {
+  .mainarea__projects__item__searcharea {
+    height: 92px;
+    padding: 27px 3% 0 3%;
+    flex-direction: row; } }

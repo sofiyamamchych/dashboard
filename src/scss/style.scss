@@ -483,8 +483,9 @@ body {
 .mainarea__projects__item__searcharea {
 	display: flex;
 	justify-content: space-between;
-	height: 92px;
-	padding: 27px 3% 0 3%;
+	// height: 92px;
+	padding: 27px 3% 17px 3%;
+	flex-direction: column;
 	input{
 		height: 40px;
 		min-width: 340px;
@@ -526,6 +527,7 @@ body {
 	min-height: 400px;
 	display: none;
 	border-top: 1px solid $greylines;
+	padding: 30px 5%;
 }
 
 @media(min-width: 1024px) {
@@ -884,3 +886,10 @@ body {
 	}
 }
 
+@media(min-width: 1200px) {
+	.mainarea__projects__item__searcharea {
+		height: 92px;
+		padding: 27px 3% 0 3%;
+		flex-direction: row;
+	}
+}
