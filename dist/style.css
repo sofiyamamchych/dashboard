@@ -214,11 +214,12 @@ body {
   padding: 18px 14px;
   width: 100%; }
 
+.mainarea__tabsline__projects,
+.mainarea__tabsline__messenger {
+  background-color: #f8f8f8; }
+
 .active-tab {
   background-color: #fff; }
-
-.inactive-tab {
-  background-color: #f8f8f8; }
 
 .mainarea__projects {
   background-color: #fff;
@@ -410,7 +411,12 @@ body {
   color: #fff;
   font-size: 21px; }
 
-@media (min-width: 760px) {
+.mainarea__messenger {
+  background-color: #fff;
+  min-height: 400px;
+  display: none; }
+
+@media (min-width: 1024px) {
   .mainwrap {
     flex-direction: row; }
   .navigation {
@@ -642,9 +648,7 @@ body {
     height: 39px;
     margin-right: 2px;
     font-size: 13px;
-    padding: 9px 13px 0 20px; } }
-
-@media (min-width: 1024px) {
+    padding: 9px 13px 0 20px; }
   .mainarea__search {
     width: calc(100% - 564px);
     min-width: 300px; } }

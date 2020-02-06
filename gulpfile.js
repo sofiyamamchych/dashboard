@@ -10,7 +10,7 @@ function convertSass() {
 }
 
 function copyHtml() {
-  return gulp.src('src/index.html') // Copy HTML to dist
+  return gulp.src('src/*.html') // Copy HTML to dist
     .pipe(gulp.dest('dist'))
 }
 
@@ -24,4 +24,9 @@ function copyFonts() {
     .pipe(gulp.dest('dist/fonts'))
 }
 
-exports.build = parallel(convertSass, copyHtml, copyImg, copyFonts);
+function copyJs() {
+  return gulp.src('src/*.js') // Copy font to dist
+    .pipe(gulp.dest('dist'))
+}
+
+exports.build = parallel(convertSass, copyHtml, copyImg, copyFonts, copyJs);

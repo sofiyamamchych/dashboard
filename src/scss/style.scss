@@ -278,12 +278,13 @@ body {
 	width: 100%;
 }
 
-.active-tab{
-	background-color: #fff;
+.mainarea__tabsline__projects,
+.mainarea__tabsline__messenger{
+	background-color: $lightgrey;
 }
 
-.inactive-tab{
-	background-color: $lightgrey;
+.active-tab{
+	background-color: #fff;
 }
 
 .mainarea__projects{
@@ -517,8 +518,13 @@ body {
 	font-size: 21px;
 }
 
+.mainarea__messenger {
+	background-color: #fff;
+	min-height: 400px;
+	display: none;
+}
 
-@media(min-width: 760px) {
+@media(min-width: 1024px) {
 	.mainwrap {
 		flex-direction: row;
 	}
@@ -867,11 +873,10 @@ body {
 		font-size: 13px;
 		padding: 9px 13px 0 20px;
 	}
-}
 
-@media(min-width: 1024px) {
 	.mainarea__search {
 		width: calc(100% - 564px);
 		min-width: 300px;
 	}
 }
+
