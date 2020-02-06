@@ -317,7 +317,8 @@ body {
   .mainarea__projects__item:hover .mainarea__projects__itemexpand {
     display: flex;
     justify-content: space-between;
-    padding: 12px 5%; }
+    padding: 24px 3% 23px 3%;
+    border-bottom: 1px solid #c8c8c8; }
   .mainarea__projects__item:hover .mainarea__projects__item__arrowwrap {
     transform: rotate(180deg); }
 
@@ -420,6 +421,25 @@ body {
   display: none;
   border-top: 1px solid #c8c8c8;
   padding: 30px 5%; }
+
+.indicator-inactive {
+  background-color: #f1f1f1; }
+
+.mainarea__projects__aside__userpic__plus {
+  display: none;
+  border: 1px solid #c8c8c8;
+  border-radius: 50%;
+  padding: 8px 0 0 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+  color: #c8c8c8;
+  margin-left: 5px;
+  position: relative;
+  top: 2px; }
+
+.mainarea__projects__itemexpand .mainarea__projects__item__btn {
+  display: none; }
 
 @media (min-width: 1024px) {
   .mainwrap {
@@ -559,7 +579,8 @@ body {
       margin-left: 7px; }
     .mainarea__tabsline__projects .count {
       top: 14px;
-      right: 35px; }
+      right: 35px;
+      background-color: #adadad; }
   .mainarea__tabsline__projects__icon {
     display: inline-block;
     width: 48px;
@@ -656,10 +677,31 @@ body {
     padding: 9px 13px 0 20px; }
   .mainarea__search {
     width: calc(100% - 564px);
-    min-width: 300px; } }
+    min-width: 300px; }
+  .mainarea__projects__itemexpand .mainarea__projects__item__btn {
+    padding: 7px 18px 11px 21px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px; }
+  .mainarea__projects__itemexpand .mainarea__projects__item__btn img {
+    width: 11px;
+    transform: rotate(180deg);
+    margin-right: 9px; }
+  .mainarea__projects__aside__userpic__plus {
+    display: block; } }
 
 @media (min-width: 1200px) {
   .mainarea__projects__item__searcharea {
     height: 92px;
     padding: 27px 3% 0 3%;
-    flex-direction: row; } }
+    flex-direction: row; }
+  .mainarea__projects__itemexpand .mainarea__projects__aside__userpic {
+    margin: 0 0 0 5px;
+    position: relative;
+    top: -8px; }
+  .mainarea__projects__itemexpand .mainarea__projects__aside__userpic img {
+    width: 34px; } }
+
+@media (min-width: 1400px) {
+  .mainarea__projects__itemexpand .mainarea__projects__item__btn {
+    display: block; } }
