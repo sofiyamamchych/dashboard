@@ -219,7 +219,10 @@ body {
   background-color: #f8f8f8; }
 
 .active-tab {
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0px 4px 0px 0px #fff;
+  position: relative;
+  z-index: 30; }
 
 .mainarea__projects {
   background-color: #fff;
@@ -414,7 +417,8 @@ body {
 .mainarea__messenger {
   background-color: #fff;
   min-height: 400px;
-  display: none; }
+  display: none;
+  border-top: 1px solid #c8c8c8; }
 
 @media (min-width: 1024px) {
   .mainwrap {
