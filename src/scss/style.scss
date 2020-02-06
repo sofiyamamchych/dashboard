@@ -312,12 +312,26 @@ body {
 
 .mainarea__projects__aside__item {
 	display: flex;
-	padding: 12px 5%;
+	padding: 13px 5% 20px 5%;
 	border-bottom: 1px solid $greylines;
+	.mainarea__projects__aside__userpic img {
+		position: relative;
+		top: 0;
+		left: 14px;
+	}
+	.mainarea__projects__aside__indicatoronline{
+		top: 12px;
+		left: 12px;
+		width: 9px;
+		height: 9px;
+		border: 2px solid white;
+		box-sizing: content-box;
+		z-index: 20;
+	}
 }
 
 .mainarea__projects__aside__userpic {
-	margin: 0 14px 0 0;
+	margin: 0 23px 0 0;
 }
 
 .mainarea__projects__aside__indicatoronline {
@@ -332,6 +346,7 @@ body {
 
 .mainarea__projects__aside__eventtext {
 	color: #909090;
+	margin: 15px 0 4px 0;
 	span{
 		color: $black;
 	}
@@ -707,13 +722,15 @@ body {
 	}
 
 	.mainarea__projects__aside {
-		width: 33%;
+		width: 27%;
+		margin-right: 2%;
 		margin-top: 30px;
 		position: relative;
 	}
 
 	.mainarea__projects__main{
-		width: 66%;
+		width: 68%;
+		margin-left: 2%;
 		margin-top: 30px;
 		position: relative;
 	}
