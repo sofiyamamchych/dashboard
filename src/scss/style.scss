@@ -343,7 +343,7 @@ body {
   font-size: 12px;
 }
 
-.mainarea__projects__aside__archivebtn {
+.mainarea__archivebtn {
 	color: $black;
 	padding: 12px 5%;
 	cursor: pointer;
@@ -384,6 +384,9 @@ body {
 		color: $greylines;
 		border: 1px solid $greylines;
 		background-color: $grey;
+	}
+	.mainarea__projects__aside__userpic{
+		display: none;
 	}
 }
 
@@ -700,17 +703,48 @@ body {
 	.mainarea__projects {
 		display: flex;
 		justify-content: space-between;
+		height: 600px;
 	}
 
 	.mainarea__projects__aside {
 		width: 33%;
 		margin-top: 30px;
+		position: relative;
 	}
 
 	.mainarea__projects__main{
 		width: 66%;
 		margin-top: 30px;
+		position: relative;
 	}
+
+	.mainarea__projects__itemexpand {
+		.mainarea__projects__aside__userpic{
+			display: block;
+			img{
+				width: 20px;
+			}
+		}
+	}
+	
+	.mainarea__archivebtn {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.mainarea__projects__main__wrap {
+		height: 510px;
+		overflow: scroll;
+		border-bottom: 1px solid $greylines;
+	}
+
+	.mainarea__projects__aside__wrap {
+		height: 510px;
+		overflow: scroll;
+		border-bottom: 1px solid $greylines;
+	}
+
 }
 
 @media(min-width: 1024px) {
