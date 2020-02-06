@@ -624,7 +624,7 @@ body {
   .mainarea__projects {
     display: flex;
     justify-content: space-between;
-    height: 600px; }
+    height: 980px; }
   .mainarea__projects__aside {
     width: 27%;
     margin-right: 2%;
@@ -644,11 +644,11 @@ body {
     bottom: 0;
     width: 100%; }
   .mainarea__projects__main__wrap {
-    height: 417px;
+    height: 810px;
     overflow-y: scroll;
     border-bottom: 1px solid #c8c8c8; }
   .mainarea__projects__aside__wrap {
-    height: 510px;
+    height: 902px;
     overflow-y: scroll;
     border-bottom: 1px solid #c8c8c8; }
   .mainarea__projects__item__content {
