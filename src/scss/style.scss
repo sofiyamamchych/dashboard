@@ -291,15 +291,86 @@ body {
 	background-color: $grey;
 	width: 90%;
 	text-align: right;
+	box-shadow: 11px 14px 51px -5px rgb(207, 203, 207);
 }
 
 .mainarea__tabsline__projects__icon, 
 .mainarea__tabsline__messenger__icon {
-		display: none;
+	display: none;
+}
+
+.mainarea__projects__main{
+	border: 1px solid $greylines;
+	border-radius: 4px;
+}
+
+.mainarea__projects__aside {
+	border: 1px solid $greylines;
+	border-radius: 4px;
+	box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mainarea__projects__aside__item {
+	display: flex;
+	padding: 12px 5%;
+	border-bottom: 1px solid $greylines;
+}
+
+.mainarea__projects__aside__userpic {
+	margin: 0 14px 0 0;
+}
+
+.mainarea__projects__aside__indicatoronline {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: $green;
+	position: relative;
+	top: 10px;
+	border: 2px solid #fff;
+}
+
+.mainarea__projects__aside__eventtext {
+	color: #909090;
+	span{
+		color: $black;
 	}
+}
 
+.mainarea__projects__aside__time {
+	color: $greylines;
+	text-transform: uppercase;
+  font-size: 12px;
+}
 
-@media(min-width: 700px) {
+.mainarea__projects__aside__archivebtn {
+	color: $black;
+	padding: 12px 5%;
+	cursor: pointer;
+	img {
+		width: 14px;
+		transform: rotate(270deg);
+	}
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+.mainarea__projects__itemexpand {
+	display: none;
+}
+
+.mainarea__projects__item {
+	border-bottom: 1px solid $greylines;
+	&:hover .mainarea__projects__itemexpand {
+		display: block;
+	}
+	&:hover .mainarea__projects__item__arrow {
+		transform: rotate(180deg);
+	}
+}
+
+@media(min-width: 760px) {
 	.mainwrap {
 		flex-direction: row;
 	}
@@ -542,22 +613,34 @@ body {
 	}
 
 	.mainarea__search {
-		/* width: calc(100% - 564px); */
-		/* min-width: 300px; */
 		padding: 4px 8.7% 0 21px;
 		input {
 			height: 100%;
 			font-size: 18px;
 			color: $greylines;
+			box-shadow: none;
 		}
 	}
+
+	.mainarea__projects {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.mainarea__projects__aside {
+		width: 33%;
+	}
+
+	.mainarea__projects__main{
+		width: 66%;
+	}
+
+
 }
 
 @media(min-width: 1024px) {
-
-		.mainarea__search {
+	.mainarea__search {
 		width: calc(100% - 564px);
 		min-width: 300px;
-	
 	}
 }
