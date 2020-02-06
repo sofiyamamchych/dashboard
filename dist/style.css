@@ -365,6 +365,41 @@ body {
   color: #272d33;
   font-size: 14px; }
 
+.mainarea__projects__item__searcharea {
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+  padding: 27px 3% 0 3%; }
+  .mainarea__projects__item__searcharea input {
+    height: 40px;
+    min-width: 340px;
+    font-size: 18px;
+    border: 0; }
+
+.mainarea__projects__item__searcharea__btns {
+  display: flex; }
+
+.mainarea__projects__item__searcharea__btn {
+  text-transform: none;
+  height: 39px;
+  margin-right: 11px;
+  font-size: 13px;
+  padding: 9px 13px 0 20px; }
+  .mainarea__projects__item__searcharea__btn img {
+    width: 15px;
+    margin: 0px 0 0 9px;
+    position: relative;
+    top: 4px; }
+
+.mainarea__projects__item__plus {
+  background-color: #ff503f;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  padding: 7px 0 0 13px;
+  color: #fff;
+  font-size: 21px; }
+
 @media (min-width: 760px) {
   .mainwrap {
     flex-direction: row; }
